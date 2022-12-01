@@ -50,11 +50,11 @@ sudo systemctl enable nginx
 ```
 sudo mkdir /usr/share/nginx/html/repo
 ```
-Копируем в папу собранные пакеты:
+Копируем в папку собранные пакеты:
 ```
 sudo cp /root/rpmbuild/RPMS/x86_64/zabbix*.rpm /usr/share/nginx/html/repo
 ```
-Сздаем репозиторий:
+Создаем репозиторий:
 ```
 sudo createrepo /usr/share/nginx/html/repo/
 sudo createrepo --update /usr/share/nginx/html/repo
